@@ -5,8 +5,8 @@ $remote_addr = $_SERVER['REMOTE_ADDR'];
 if (!empty($remote_addr)) {
     $ip = explode(".", $remote_addr);
     if (count($ip) == 4 &&
-            $ip[0] == '130' &&
-            $ip[1] == '68') { // Only allow internal traffic
+            $ip[0] == '10' /*&&
+            $ip[1] == '68'*/) { // Only allow internal traffic
         
         require_once("../config.php");
         
